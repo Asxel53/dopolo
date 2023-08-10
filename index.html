@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="calculatrice">
+    <h1>Calculatrice</h1>
+    <div id="cal">
+    <input type="text" readonly value="0" id="number" placeholder="">
+    <div class="element0">
+    <div class="element1">
+    <div>
+    <button onclick="addNumber('7')">7</button>
+    <button onclick="addNumber('8')">8</button>
+    <button onclick="addNumber('9')">9</button>
+</div>
+<div>
+    <button onclick="addNumber('4')">4</button>
+    <button onclick="addNumber('5')">5</button>
+    <button onclick="addNumber('6')">6</button>
+</div>
+<div>
+    <button onclick="addNumber('1')">1</button>
+    <button onclick="addNumber('2')">2</button>
+    <button onclick="addNumber('3')">3</button>
+</div>
+<div>
+    <button onclick="egal('=')">=</button>
+    <button onclick="addNumber(0)">0</button>
+    <button onclick="operat('.')">.</button>
+</div>
+</div>
+<div class="element2">
+    <button class="autre"  onclick="delect()"> Supp</button>
+    <button class="autre" onclick="operat('/')">/</button>
+    <button class="autre" onclick="operat('+')">+</button>
+    <button class="autre" onclick="operat('*')">*</button>
+    <button class="autre" onclick="operat('-')">-</button>
+    <button class="autre"  onclick="backspace()">BKS</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
